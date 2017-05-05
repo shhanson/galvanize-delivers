@@ -13,9 +13,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
+
+
     <style>
         div {
-            border: 1px solid green;
+            /*border: 1px solid green;*/
         }
 
         .banner {
@@ -32,107 +34,194 @@
 
 
 
-    <!-- <div class="row"> -->
 
     <nav class="blue darken-2">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">Galvanize Delivers</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="order.html">Order Delivery</a></li>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="order.html">Order Delivery</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="active"><a href="order.html">Order Delivery</a></li>
             </ul>
         </div>
 
     </nav>
 
-    <!-- </div> -->
 
 
 
 
-    <div class="row">
-        <div class="container">
+    <div class="container">
 
-            <div class="col s12 l6">
+        <div class="row">
+
+            <div class="col s12 m6">
+
+                <!-- <div class="container"> -->
                 <h4>Menu</h4>
 
+                <div class="row">
+                    <div class="card col s12 m12 l6 medium">
+                        <div class="card-image">
+                            <img src="img/burger.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Royale with Cheese</span>
+                            <p>$8.99</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="pink-text" id="addburger">ADD TO ORDER</a>
+                        </div>
+                    </div>
+                    <div class="card col s12 m12 l6 medium">
+                        <div class="card-image">
+                            <img src="img/pizza.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Arugula Pie</span>
+                            <p>$11.99</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="pink-text" id="addpizza">ADD TO ORDER</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card col s12 m12 l6 medium">
+                        <div class="card-image">
+                            <img src="img/ribs.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Smoked Swine</span>
+                            <p>$14.99</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="pink-text" id="addswine">ADD TO ORDER</a>
+                        </div>
+                    </div>
+                    <div class="card col s12 m12 l6 medium">
+                        <div class="card-image">
+                            <img src="img/pizza.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Ice Cream Biscut</span>
+                            <p>$7.99</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="pink-text" id="addicecream">ADD TO ORDER</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
             </div>
-            <div class="col s12 l6">
+
+
+
+
+
+
+
+            <div class="col s12 m6">
+                <!-- <div class="container"> -->
                 <h4>Order</h4>
 
 
-            </div>
 
+                <table class="striped bordered">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Royale with Cheese</td>
+                            <td>$8.99</td>
+
+                        </tr>
+                        <tr>
+                            <td>Arugula Pie</td>
+                            <td>$11.99</td>
+
+                        </tr>
+                        <tr>
+                            <td>Smoked Swine</td>
+                            <td>$14.99</td>
+
+                        </tr>
+                        <tr>
+                            <td>Ice Cream Biscut</td>
+                            <td>$7.99</td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$43.96</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tax</td>
+                        <td>$4.40</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total</td>
+                        <td>$48.36</td>
+                    </tr>
+
+
+                </table>
+
+            <!-- <div class="container">
+                <table class="table">
+
+
+
+
+
+                </table>
+
+</div> -->
+
+                <form class="col s12">
+
+                    <div class="input-field col s12">
+                        <i class="pink-text material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="pink-text material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="pink-text material-icons prefix">business</i>
+                        <input id="icon_telephone" type="text" class="validate">
+                        <label for="icon_telephone">Address</label>
+                    </div>
+                </form>
+                <!-- </div> -->
+
+            </div>
 
         </div>
 
     </div>
 
-    <!-- <div class="row">
-        <div class="container">
 
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/burger.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Royale with Cheese</span>
-                        <p>$8.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="pink-text">ADD TO ORDER</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/pizza.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Arugula Pie</span>
-                        <p>$11.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="pink-text">ADD TO ORDER</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/ribs.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Smoked Swine</span>
-                        <p>$14.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="pink-text">ADD TO ORDER</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/ice_cream.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Ice Cream Biscut</span>
-                        <p>$7.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="pink-text">ADD TO ORDER</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div> -->
 
 
 
@@ -159,6 +248,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/gDelivers.js"></script>
 </body>
 
 </html>

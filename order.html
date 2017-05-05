@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Galvanize Delivers</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
@@ -130,7 +131,7 @@
 
 
 
-                <table class="striped bordered">
+                <table class="striped bordered" id="orderstable">
                     <thead>
                         <tr>
                             <th>Item</th>
@@ -164,26 +165,31 @@
                     </tbody>
                 </table>
 
-                <table class="table">
-                    <tr>
-                        <td>Subtotal</td>
-                        <td>$43.96</td>
-                    </tr>
+                <div class="col s12 m8 l8 right">
+                    <table class="table" id="totalstable">
+                        <tr>
+                            <td class="right-align">Subtotal</td>
+                            <td></td>
+                            <td id="subtotal">$43.96</td>
+                        </tr>
 
-                    <tr>
-                        <td>Tax</td>
-                        <td>$4.40</td>
-                    </tr>
+                        <tr>
+                            <td class="right-align">Tax</td>
+                            <td></td>
+                            <td id="tax">$4.40</td>
+                        </tr>
 
-                    <tr>
-                        <td>Total</td>
-                        <td>$48.36</td>
-                    </tr>
+                        <tr>
+                            <td class="right-align">Total</td>
+                            <td></td>
+                            <td id="total">$48.36</td>
+                        </tr>
 
 
-                </table>
+                    </table>
+                </div>
 
-            <!-- <div class="container">
+                <!-- <div class="container">
                 <table class="table">
 
 
@@ -198,19 +204,22 @@
 
                     <div class="input-field col s12">
                         <i class="pink-text material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate">
+                        <input id="icon_prefix" type="text" class="validate" required>
                         <label for="icon_prefix">Name</label>
                     </div>
                     <div class="input-field col s12">
                         <i class="pink-text material-icons prefix">phone</i>
-                        <input id="icon_telephone" type="tel" class="validate">
+                        <input id="icon_telephone" type="tel" class="validate" required>
                         <label for="icon_telephone">Telephone</label>
                     </div>
 
                     <div class="input-field col s12">
                         <i class="pink-text material-icons prefix">business</i>
-                        <input id="icon_telephone" type="text" class="validate">
+                        <input id="icon_telephone" type="text" class="validate" required>
                         <label for="icon_telephone">Address</label>
+                    </div>
+                    <div class="center-align">
+                        <button class="btn waves-effect waves-light pink" type="submit" name="action">PLACE ORDER</button>
                     </div>
                 </form>
                 <!-- </div> -->

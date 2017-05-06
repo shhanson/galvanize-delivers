@@ -16,33 +16,34 @@ document.addEventListener("DOMContentLoaded", function() {
     $("#addburger").click(function() {
         $("#orderstable").append("<tr><td>Royale with Cheese</td><td>$" + BURGER_PRICE + "</td></tr>");
         updateTotals(BURGER_PRICE);
-
-
-
     });
 
     $("#addpizza").click(function() {
         $("#orderstable").append("<tr><td>Arugula Pie</td><td>$" + PIZZA_PRICE + "</td></tr>");
         updateTotals(PIZZA_PRICE);
-
-
     });
 
     $("#addicecream").click(function() {
         $("#orderstable").append("<tr><td>Ice Cream Biscut</td><td>$" + ICECREAM_PRICE + "</td></tr>");
         updateTotals(ICECREAM_PRICE);
-
     });
 
     $("#addswine").click(function() {
         $("#orderstable").append("<tr><td>Smoked Swine</td><td>$" + SWINE_PRICE + "</td></tr>");
         updateTotals(SWINE_PRICE);
-
     });
 
     $("#orderbtn").click(function() {
-        //if #orderstable empty or input fields empty, toast validation message
-        // Materialize.toast('I am a toast!', 4000) // 4000 is the duration of the toast
+        if (total === 0 || !$("#name").val() || !$("#phone").val() || !$("#address").val()) {
+            if (total === 0) {
+                Materialize.toast("Nothing added to order!", 4000);
+            } else {
+                Materialize.toast("Please fill in all required fields!", 4000);
+            }
+
+        } else {
+            Materialize.toast("Order placed! Bon appétit!", 8000)
+        }
     });
 
     function updateTotals(price) {
@@ -53,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
         $("#subtotal").text("$" + subtotal.toFixed(2));
         $("#tax").text("$" + taxes.toFixed(2));
         $("#total").text("$" + total.toFixed(2));
-
     }
 
 });

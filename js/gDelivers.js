@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     $("#addicecream").click(function() {
-        $("#orderstable").append("<tr><td>Ice Cream Biscut</td><td>$" + ICECREAM_PRICE + "</td></tr>");
+        $("#orderstable").append("<tr><td>Ice Cream Biscuit</td><td>$" + ICECREAM_PRICE + "</td></tr>");
         updateTotals(ICECREAM_PRICE);
     });
 

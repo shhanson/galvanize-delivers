@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
         updateTotals(SWINE_PRICE);
     });
 
-    $("#orderbtn").click(function() {
+    $("#orderbtn").click(function(event) {
+        event.preventDefault();
         if (total === 0 || !$("#name").val() || !$("#phone").val() || !$("#address").val()) {
             if (total === 0) {
                 Materialize.toast("Nothing added to order!", 4000);
